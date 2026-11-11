@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кирилл — bumazhnyk AI</title>
+<meta name="description" content="Кирилл — AI-креатор. Видео и визуал для бизнеса: реклама, объяснение услуг, визуализация. Кейсы, услуги, контакты.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Кирилл — bumazhnyk AI">
+<meta property="og:description" content="AI-видео и визуал для бизнеса: реклама, объяснение услуг, визуализация.">
+<meta name="theme-color" content="#070707">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('theme')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#070707; --ink:#fff; --muted:rgba(255,255,255,.62); --o1:#FF7A00; --o2:#FF3D00;
+  --glass:rgba(255,255,255,.06); --edge:rgba(255,255,255,.13);
+  --font:'Montserrat','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--font);overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;width:46vmax;height:46vmax;border-radius:50%;filter:blur(110px);background:var(--o2);opacity:.38}
+body::before{left:-30vmax;top:30vh}body::after{right:-30vmax;bottom:-10vmax;background:var(--o1);opacity:.3}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--o1);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);border:1px solid var(--edge);border-radius:28px;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 24px 60px rgba(0,0,0,.5)}
+header{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:30;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 0;padding:8px 8px 8px 20px;border-radius:999px;background:rgba(18,18,20,.55);-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);border:1px solid var(--edge);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 14px 40px rgba(0,0,0,.5)}
+.ctarow{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
+.jump{display:flex;flex-wrap:wrap;gap:14px 26px}
+.jump a{display:inline-flex;align-items:center;gap:12px;font-weight:600;font-size:15px;text-decoration:none;color:#fff}
+.jump a::before{content:"→";width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:17px;background:linear-gradient(135deg,var(--o1),var(--o2));box-shadow:0 6px 18px rgba(255,90,0,.4);transition:transform .3s}
+.jump a:hover::before{transform:translateX(5px)}
+.brand{text-decoration:none}
+header nav{display:flex;gap:24px}
+header nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:14px}
+header nav a:hover{color:#fff}
+.hr{display:flex;align-items:center;gap:10px}
+.wr{padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;background:linear-gradient(135deg,var(--o1),var(--o2));box-shadow:0 6px 20px rgba(255,90,0,.4)}
+.quick{margin-top:20px;color:var(--muted);font-size:14px}
+.quick div{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.quick a{padding:11px 18px;border-radius:999px;font-weight:600;text-decoration:none;color:#fff;border:1px solid var(--edge);background:rgba(255,255,255,.07);transition:border-color .3s}
+.quick a:hover{border-color:rgba(255,122,0,.7)}
+@media(max-width:760px){header nav{display:none}header{padding-left:16px}}
+header b{white-space:nowrap}
+@media(max-width:480px){header{gap:6px;padding:7px 7px 7px 14px}.lang button{padding:6px 7px;font-size:12px}.wr{padding:9px 12px;font-size:13px}header b{font-size:13px}.hr{gap:6px}}
+@media(max-width:400px){header{padding:6px 6px 6px 12px}header b{font-size:12px}.lang button{padding:5px 6px;font-size:11px}.wr{padding:8px 11px;font-size:12px}}
+header b{font-weight:800}
+.lang{display:flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.08)}
+.lang button{border:0;background:transparent;color:var(--muted);font:600 13px var(--font);padding:7px 13px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:rgba(255,255,255,.16);color:#fff}
+.sec{position:relative;padding-top:80px}
+.ghost{position:absolute;left:0;top:30px;font:800 clamp(80px,17vw,200px)/1 var(--font);color:rgba(255,255,255,.045);white-space:nowrap;pointer-events:none;user-select:none;will-change:transform}
+h1,h2{font-family:var(--font);font-weight:800;letter-spacing:-.025em;margin:0}
+h1{font-size:clamp(32px,5.4vw,60px);line-height:1.08;max-width:20ch}
+h2{position:relative;font-size:clamp(26px,4vw,40px);margin-bottom:26px}
+h1 b,h2 b{color:var(--o1);font-weight:800}
+.hero{position:relative;display:grid;grid-template-columns:1fr;padding:56px 0 10px}
+.ln{display:block;overflow:hidden}
+.ln>span{display:block;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{transform:none}}
+.role{color:var(--o1);font-weight:600;margin:0 0 16px}
+.sub b{color:#fff;font-weight:700}
+.sub{color:var(--muted);font-size:17px;margin:20px 0 22px;max-width:46ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chips span{padding:8px 14px;border-radius:999px;font-size:13.5px;font-weight:500}
+.cta{display:inline-flex;align-items:center;gap:14px;text-decoration:none;font-weight:600}
+.cta i,.go{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--o1),var(--o2));font-style:normal;font-size:20px;box-shadow:0 8px 24px rgba(255,90,0,.45);transition:transform .3s}
+.cta:hover i,.card:hover .go{transform:translateX(5px)}
+.frame{position:relative;aspect-ratio:3/4;padding:12px;overflow:hidden}
+.scene{position:relative;height:calc(100% - 52px);border-radius:20px;overflow:hidden;background:#120804}
+.scene{background:radial-gradient(120% 70% at 50% 0,#2a140a 0,#0d0705 70%)}
+.av{position:absolute;left:50%;bottom:56px;width:66%;aspect-ratio:1;transform:translateX(-50%)}
+.av img{position:absolute;display:block;height:auto}
+.sit{width:87.7%;left:6.1%;bottom:0;transform-origin:50% 100%;animation:sit 10s ease-in-out infinite}
+@keyframes sit{0%,6%{transform:translateY(105%)}20%{transform:translateY(-4%)}25%,30%{transform:none}34%{transform:translateY(-3%) rotate(-5deg)}40%{transform:translateY(-3%) rotate(5deg)}46%{transform:translateY(-3%) rotate(-5deg)}52%{transform:translateY(-3%) rotate(5deg)}58%{transform:translateY(-3%) rotate(-4deg)}64%,72%{transform:none}84%,100%{transform:translateY(105%)}}
+.deskp{position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(#2b1a12,#120d0a);border-top:1px solid rgba(255,140,40,.45);box-shadow:0 -10px 30px rgba(255,100,0,.12)}
+.bub{position:absolute;right:6%;top:9%;padding:10px 18px;border-radius:999px;background:#fff;color:#111;font-weight:800;font-size:16px;opacity:0;transform-origin:20% 100%;animation:bub 10s ease-out infinite}
+@keyframes bub{0%,29%{opacity:0;transform:scale(.6)}33%,62%{opacity:1;transform:scale(1)}66%,100%{opacity:0;transform:scale(.6)}}
+.rec{position:absolute;left:14px;top:14px;display:flex;gap:8px;align-items:center;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.4)}
+.rec::before{content:"";width:8px;height:8px;border-radius:50%;background:#ff3b30;animation:bl 1.2s infinite}
+@keyframes bl{50%{opacity:.2}}
+.tl{position:relative;height:40px;margin-top:12px;border-radius:12px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 2px,transparent 2px 14px);overflow:hidden}
+.tl::after{content:"";position:absolute;top:0;bottom:0;width:3px;left:0;background:var(--o1);box-shadow:0 0 14px var(--o1);animation:ph 10s linear infinite}
+@keyframes ph{to{left:100%}}
+.tc{position:absolute;right:14px;top:14px;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.4);font-variant-numeric:tabular-nums}
+.glow{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(380px circle at var(--mx,-999px) var(--my,-999px),rgba(255,106,0,.2),transparent 62%)}
+.rv{opacity:0}
+.rv.in{opacity:1;animation:rvIn 1s cubic-bezier(.2,.8,.2,1) var(--d,0s) backwards}
+@keyframes rvIn{from{opacity:0;transform:translateX(var(--dx,-110px))}to{opacity:1;transform:none}}
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:12px;text-align:left;color:inherit;font:inherit;cursor:pointer;display:flex;flex-direction:column;gap:14px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(255,122,0,.6)}
+.poster{position:relative;aspect-ratio:3/4;border-radius:20px;overflow:hidden;background-size:cover;background-position:center;background-color:#111}
+.p1{background:radial-gradient(circle at 25% 25%,#7AF0FF 0,transparent 48%),radial-gradient(circle at 85% 85%,#FF7A00 0,transparent 55%),#0c1626}
+.p2{background:radial-gradient(circle at 75% 20%,#FFC36B 0,transparent 50%),radial-gradient(circle at 15% 90%,#FF2E6E 0,transparent 55%),#2a0f12}
+.play{position:absolute;left:50%;top:50%;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;background:rgba(255,255,255,.2);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--edge)}
+.play::after{content:"";position:absolute;left:28px;top:21px;border-left:19px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.stat{position:absolute;right:12px;bottom:12px;padding:6px 12px;border-radius:999px;font-size:12.5px;font-weight:700;background:linear-gradient(135deg,var(--o1),var(--o2))}
+.tag{position:absolute;left:12px;top:12px;padding:6px 12px;border-radius:999px;font-size:12.5px;font-weight:600;background:rgba(0,0,0,.4)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:0 6px 6px}
+.card h3{font:800 19px/1.2 var(--font);margin:0 0 4px;letter-spacing:-.02em}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.go{flex:none;width:44px;height:44px}
+.serv{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.box{padding:24px}
+.box h3{font:800 17px/1.25 var(--font);margin:0 0 10px;color:var(--o1)}
+.box p{margin:0;color:var(--muted);font-size:14.5px}
+.two{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+.rfeat{position:relative;margin:0 0 16px;padding:30px 34px 26px;display:flex;flex-direction:column;gap:22px}
+.rfeat::before{content:"“";position:absolute;left:26px;top:8px;font:800 96px/1 var(--font);color:var(--o1);opacity:.55}
+.rfeat blockquote{margin:0;padding-top:34px;font:500 clamp(17px,2.1vw,21px)/1.6 var(--font)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.rcard{margin:0;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.rcard blockquote{margin:0;font-size:15.5px;line-height:1.55}
+.rfeat figcaption,.rcard figcaption{display:flex;align-items:center;gap:12px;font-size:14px}
+.av2{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;background:linear-gradient(135deg,var(--o1),var(--o2));box-shadow:0 6px 16px rgba(255,90,0,.35)}
+.tools{display:flex;flex-wrap:wrap;gap:10px}
+.tools span{padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px}
+.contact{padding:40px 34px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+.contact p{margin:0;color:var(--muted);max-width:36ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;background:rgba(255,255,255,.1);border:1px solid var(--edge)}
+.btn.main{background:linear-gradient(135deg,var(--o1),var(--o2));border:0;box-shadow:0 8px 26px rgba(255,90,0,.4)}
+footer{color:var(--muted);font-size:13px;padding:28px 4px 0}
+dialog{border:0;padding:0;background:transparent;color:#fff;max-width:min(880px,94vw);width:100%;overflow:visible}
+dialog::backdrop{background:rgba(0,0,0,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.modal{padding:14px;display:grid;grid-template-columns:minmax(0,auto) 1fr;gap:22px}
+.snd{position:absolute;left:50%;top:12px;transform:translateX(-50%);z-index:2;padding:9px 16px;border-radius:999px;border:1px solid var(--edge);background:rgba(0,0,0,.65);color:#fff;font:600 13px var(--font);cursor:pointer;white-space:nowrap}
+.screen{position:relative;aspect-ratio:9/16;height:min(70vh,560px);border-radius:20px;overflow:hidden;background:#0a0a0a;display:grid;place-items:center;text-align:center;color:var(--muted);padding:16px}
+.screen video,.screen iframe{width:100%;height:100%;border:0;object-fit:cover}
+.info{padding:10px 8px;display:flex;flex-direction:column;gap:12px}
+.info h3{font:800 26px var(--font);margin:0;letter-spacing:-.02em}
+.info h4{font:600 13px var(--font);color:var(--o1);margin:6px 0 2px}
+.info p{margin:0;color:var(--muted);font-size:15px}
+.close{margin-top:auto;padding:13px;border-radius:999px;border:1px solid var(--edge);background:rgba(255,255,255,.1);color:#fff;font:600 15px var(--font);cursor:pointer}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.frame{aspect-ratio:4/3}.serv{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+@media(max-width:900px){.works{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.works,.serv{grid-template-columns:1fr}.modal{grid-template-columns:1fr}.screen{height:52vh;margin:0 auto}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto}.ln>span{transform:none}}
+.modal.land{grid-template-columns:1fr;max-height:92vh;overflow-y:auto}
+.modal.land .screen{width:100%;height:auto;aspect-ratio:16/9;margin:0;padding:0}
+.modal.land .info{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;padding:6px 10px 10px}
+.modal.land .info h3,.modal.land .close{grid-column:1/-1}
+@media(max-width:620px){.modal.land .info{grid-template-columns:1fr}}
+.theme{flex:none;width:38px;height:38px;padding:0;border-radius:50%;border:1px solid var(--edge);background:rgba(255,255,255,.08);color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.theme svg{width:18px;height:18px}
+.theme .moon{display:none}
+@media(max-width:480px){.theme{width:34px;height:34px}}
+body{transition:background-color .35s,color .35s}
+:root[data-theme="light"]{color-scheme:light;--bg:#e8f2fe;--ink:#14233a;--muted:rgba(20,35,58,.66);--o1:#2189ee;--o2:#1560d6;--glass:rgba(255,255,255,.66);--edge:rgba(30,90,160,.16)}
+[data-theme="light"] body{background:radial-gradient(900px 620px at 88% -4%,rgba(110,184,255,.5),transparent 62%),radial-gradient(820px 620px at -6% 55%,rgba(140,200,255,.42),transparent 62%),linear-gradient(180deg,#e3f0fe 0%,#edf5fe 55%,#f6f1ea 100%);background-attachment:fixed}
+[data-theme="light"] body::before{background:#6fb8ff;opacity:.5}
+[data-theme="light"] body::after{background:#9fd0ff;opacity:.5}
+[data-theme="light"] .glass{box-shadow:inset 0 1px 0 #fff,0 18px 44px rgba(40,90,150,.13)}
+[data-theme="light"] header{background:rgba(255,251,245,.74);box-shadow:inset 0 1px 0 #fff,0 12px 34px rgba(40,90,150,.15)}
+[data-theme="light"] .jump a,[data-theme="light"] .quick a,[data-theme="light"] header nav a:hover,[data-theme="light"] .sub b,[data-theme="light"] .rfeat figcaption b,[data-theme="light"] .rcard figcaption b{color:var(--ink)}
+[data-theme="light"] .jump a::before,[data-theme="light"] .go,[data-theme="light"] .cta i,[data-theme="light"] .wr,[data-theme="light"] .btn.main,[data-theme="light"] .stat,[data-theme="light"] .tag,[data-theme="light"] .rec,[data-theme="light"] .tc,[data-theme="light"] .av2{color:#fff}
+[data-theme="light"] .jump a::before,[data-theme="light"] .go,[data-theme="light"] .cta i,[data-theme="light"] .wr,[data-theme="light"] .btn.main,[data-theme="light"] .av2{box-shadow:0 8px 22px rgba(21,96,214,.32)}
+[data-theme="light"] .quick a,[data-theme="light"] .btn:not(.main){background:rgba(255,255,255,.75)}
+[data-theme="light"] .quick a:hover,[data-theme="light"] .card:hover{border-color:rgba(33,137,238,.6)}
+[data-theme="light"] .lang{background:rgba(20,50,90,.07)}
+[data-theme="light"] .lang button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(40,90,150,.15)}
+[data-theme="light"] .theme{background:rgba(20,50,90,.07)}
+[data-theme="light"] .theme .sun{display:none}
+[data-theme="light"] .theme .moon{display:block}
+[data-theme="light"] .ghost{color:rgba(20,60,110,.06)}
+[data-theme="light"] .glow{background:radial-gradient(380px circle at var(--mx,-999px) var(--my,-999px),rgba(40,150,255,.16),transparent 62%)}
+[data-theme="light"] dialog{color:var(--ink)}
+[data-theme="light"] .close{color:var(--ink);background:rgba(20,50,90,.08)}
+[data-theme="light"] .screen{color:rgba(255,255,255,.6)}
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+  <header>
+    <a class="brand" href="#top"><b>bumazhnyk AI</b></a>
+    <div class="hr">
+      <button class="theme" id="theme" type="button" aria-label="Theme" title="Theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <div class="lang" role="group" aria-label="Language"><button data-l="ru">RU</button><button data-l="en">EN</button><button data-l="uk">UA</button></div>
+      <a class="wr tg" href="https://t.me/bumazhnyk" target="_blank" rel="noopener" data-i="write"></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="glow"></div>
+      <div class="ghost" data-sp=".25" aria-hidden="true">Video</div>
+      <div style="position:relative">
+        
+        <h1 id="h1"></h1>
+        <p class="sub" data-i="sub"></p>
+        <div class="chips"><span class="glass" data-i="c1"></span><span class="glass" data-i="c2"></span><span class="glass" data-i="c3"></span></div>
+        <div class="ctarow"><div class="jump"><a href="#works" data-i="nav1"></a><a href="#servs" data-i="nav2"></a><a href="#contact" data-i="cta"></a></div></div>
+      </div>
+      
+    </section>
+
+    <section class="sec" id="works">
+      <div class="ghost" data-sp=".12" aria-hidden="true" data-i="ghW"></div>
+      <h2 data-i="worksT"></h2>
+      <div class="works" id="grid"></div>
+    </section>
+
+    <section class="sec" id="servs">
+      <div class="ghost" data-sp=".1" aria-hidden="true" data-i="ghS"></div>
+      <h2 data-i="servT"></h2>
+      <div class="serv" id="serv"></div>
+      <div class="two">
+        <div class="box glass"><h3 data-i="toolsT"></h3><div class="tools"><span class="glass">Nano Banana</span><span class="glass">Kling</span><span class="glass">Seedance</span><span class="glass">Soul</span><span class="glass">Veo</span><span class="glass">Seedream</span></div></div>
+        </div>
+    </section>
+
+    <section class="sec" id="reviews">
+      <div class="ghost" data-sp=".1" aria-hidden="true">Reviews</div>
+      <h2 data-i="revT"></h2>
+      <figure class="rfeat glass">
+        <blockquote lang="en">Thank you very much for your work. It was a pleasure working with you. Everything was completed on time and to a high standard. We are very satisfied with the results of our collaboration and the quality of your work. We look forward to working with you on future projects.</blockquote>
+        <figcaption><span class="av2">I</span><b>Irina</b></figcaption>
+      </figure>
+      <div class="rgrid">
+        <figure class="rcard glass"><blockquote>Мне все нравится! Спасибо! Щас затестим</blockquote><figcaption><span class="av2">М</span><b>Мария</b></figcaption></figure>
+        <figure class="rcard glass"><blockquote>Супер, вам спасибо за работу!</blockquote><figcaption><span class="av2">М</span><b>Мэри</b></figcaption></figure>
+        <figure class="rcard glass"><blockquote lang="uk">І я вам вдячна за роботу) Бажаю поменше таких вредних клієнтів як я 😂</blockquote><figcaption><span class="av2">A</span><b>Angelina</b></figcaption></figure>
+        <figure class="rcard glass"><blockquote lang="uk">Останнє супер просто</blockquote><figcaption><span class="av2">A</span><b>Anastasiia</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <h2 data-i="contT"></h2>
+      <div class="contact glass">
+        <p data-i="contP"></p>
+        <div class="btns"><a class="btn main tg" href="https://t.me/bumazhnyk" target="_blank" rel="noopener">Telegram @bumazhnyk</a><a class="btn" href="mailto:bumazhnyk@gmail.com">bumazhnyk@gmail.com</a></div>
+      </div>
+      <div class="quick"><span data-i="quick"></span><div id="qk"></div></div>
+    </section>
+  </main>
+  <footer>© 2026 Кирилл · bumazhnyk AI</footer>
+</div>
+
+<dialog id="dlg"><div class="modal glass">
+  <div class="screen" id="screen"></div>
+  <div class="info"><h3 id="mt"></h3><div><h4 data-i="lt"></h4><p id="mtag"></p></div><div><h4 data-i="ltask"></h4><p id="mtask"></p></div><div><h4 data-i="lsol"></h4><p id="msol"></p></div><div><h4 data-i="lfmt"></h4><p id="mfmt"></p></div><div id="mvw"><h4 data-i="lviews"></h4><p id="mviews" style="color:#fff;font-weight:700"></p></div><button class="close" id="close" data-i="close"></button></div>
+</div></dialog>
+
+<script>
+const T={
+ru:{role:"AI-креатор · видео и визуал для бизнеса",h1:["Видео, которое привлекает","<b>клиентов</b>, без съёмочной","группы и студии"],
+ sub:"Меня зовут <b>Кирилл</b>. Создаю AI-видео и визуал под вашу задачу: привлечь охваты, объяснить услугу или показать то, что сложно снять. Вы получаете готовый материал, а не набор красивых картинок.",
+ c1:"Готово под вашу площадку",c2:"Показываю то, что дорого снять",c3:"Узнаваемый стиль бренда",cta:"Обсудить проект",ghW:"Cases",ghS:"Value",
+ worksT:"Кейсы",servT:"Что вы <b>получаете</b>",toolsT:"Инструменты",revT:"Отзывы",rev:"Здесь появятся отзывы клиентов.",contT:"Обсудим вашу <b>задачу</b>",contP:"Опишите, что нужно показать и где будет жить видео. Предложу формат и сроки.",
+ hi:"Привет!",nav1:"Кейсы",nav2:"Услуги",nav3:"Контакты",write:"Написать",quick:"Быстрый старт: выберите тему, и сообщение в Telegram уже будет написано.",tgmsg:"Здравствуйте, Кирилл! Хочу обсудить видео. Моя задача: ",tgq:"Здравствуйте, Кирилл! Хочу обсудить: ",views:"просмотров",lviews:"Результат",snd:"Включить звук",close:"Закрыть",watch:"Видео скоро будет здесь",lt:"Ниша",ltask:"Задача",lsol:"Решение",lfmt:"Формат",
+ serv:[["Видео для продвижения","Рекламные и имиджевые ролики, которые собирают охваты и запоминаются."],["Объяснение услуги","Наглядное видео: клиент понимает ценность ещё до первого звонка."],["Визуализация","Процессы, продукты и результаты, которые сложно или дорого снять."],["Контент для бренда","Единый визуальный стиль: видео, изображения, обложки."]],
+ w:[{n:"Sublimini store",tag:"Сублимированные фрукты",v:"500K+",s:"Выделить бренд и набрать охваты через сюжет на контрасте поколений.",task:"Рассказать о продукте так, чтобы ролик набирал охваты, а бренд запоминался.",sol:"Сюжет-сравнение двух подходов: бабушкин и современной мамы. Преимущество продукта раскрывается через историю, а не прямую рекламу.",fmt:"Reels · сюжетный ролик"},
+ {n:"Lumina · Герметизация фиссур",tag:"Стоматология",v:"80K",s:"Детально показать, как проходит герметизация фиссур.",task:"Детально и наглядно продемонстрировать процесс герметизации фиссур, чтобы пациенты понимали, что происходит с зубом и зачем это нужно.",sol:"AI-визуализация каждого этапа процедуры крупным планом в динамичном вертикальном видео.",fmt:"Reels · AI-визуализация"},
+ {n:"Lumina · Имплантация",tag:"Стоматология",v:"",s:"Наглядно показать пациентам ход и результат имплантации.",task:"Объяснить пациентам, как проходит имплантация и каким становится результат, понятно и без тяжёлых медицинских кадров.",sol:"AI-визуализация этапов процедуры и демонстрация готового результата в динамичном вертикальном видео.",fmt:"Reels · AI-визуализация"},
+ {n:"Окно",tag:"Гиперреализм · Сюжет",v:"",s:"Кинематографичная история, где гиперреализм работает на сюжет.",task:"Показать, на что способен AI-видеопродакшн в игровом кино: удержать фотореализм, живую актёрскую игру и цельную историю без съёмочной группы.",sol:"Сюжет о девушке и таинственном пульте, который меняет реальность за окном. Реалистичный свет, кожа и мимика, неизменный образ героини от кадра к кадру и плавный переход от бытовой сцены к сюрреалистичным пейзажам.",fmt:"Кинематографичный ролик · 16:9"},
+ {n:"Подруги в старости",tag:"3D-мультфильм",v:"",s:"Персональный анимационный подарок: две подруги в образе из будущего.",task:"Клиентка обратилась с запросом создать видео о себе и подруге в старости: тёплое, стильное, с юмором, которым хочется поделиться.",sol:"Индивидуальная 3D-анимация в стиле полнометражного мультфильма. Героини узнаваемы по характеру и образу, а сюжет ведёт от видеозвонка к путешествию по Лазурному берегу: яхты, шопинг, спа и вечерний выход. Продуманная драматургия и кинематографичная подача.",fmt:"Reels · персональный анимационный ролик"},
+ {n:"Витрина",tag:"Ретро-нуар",v:"",s:"Стилизованная киноистория в эстетике 80-х с цельной визуальной режиссурой.",task:"Показать, что AI-видео может не только объяснять и продавать, но и рассказывать полноценную киноисторию с выдержанным стилем, светом и актёрской подачей.",sol:"Динамичный сюжет в духе ретро-нуара: ночной город в сумерках, разбитая витрина, дерзкая поездка на кабриолете и кадр на Polaroid. Единый киношный цветокор с неоном и закатным небом, узнаваемая героиня на протяжении всего ролика, нарастающий темп монтажа и субтитры.",fmt:"Кинематографичный ролик · 16:9"}]},
+en:{role:"AI creator · video and visuals for business",h1:["Video that attracts","<b>clients</b>, without a crew","or a studio"],
+ sub:"My name is <b>Kirill</b>. I create AI video and visuals for your goal: win reach, explain a service, or show what is hard to film. You get ready-to-use material, not a set of pretty pictures.",
+ c1:"Ready for your platform",c2:"Shows what is costly to film",c3:"Recognizable brand style",cta:"Discuss a project",ghW:"Cases",ghS:"Value",
+ worksT:"Cases",servT:"What you <b>get</b>",toolsT:"Tools",revT:"Reviews",rev:"Client reviews will appear here.",contT:"Let's discuss your <b>task</b>",contP:"Describe what needs to be shown and where the video will live. I'll suggest a format and timing.",
+ hi:"Hi!",nav1:"Cases",nav2:"Services",nav3:"Contact",write:"Write me",quick:"Quick start: pick a topic and the Telegram message is already written.",tgmsg:"Hi Kirill! I'd like to discuss a video. My task: ",tgq:"Hi Kirill! I'd like to discuss: ",views:"views",lviews:"Result",snd:"Turn sound on",close:"Close",watch:"Video coming soon",lt:"Industry",ltask:"Task",lsol:"Solution",lfmt:"Format",
+ serv:[["Promo video","Ad and brand videos that win reach and stay in memory."],["Service explainer","A clear video: clients grasp the value before the first call."],["Visualization","Processes, products and results that are hard or costly to film."],["Brand content","One visual style: video, images, covers."]],
+ w:[{n:"Sublimini store",tag:"Freeze-dried fruit",v:"500K+",s:"Stand out and gain reach through a story of two generations.",task:"Present the product so the video wins reach and the brand is remembered.",sol:"A story comparing two approaches: grandma's and a modern mom's. The product's advantage emerges from the story, not direct advertising.",fmt:"Reels · story video"},
+ {n:"Lumina · Fissure sealing",tag:"Dental clinic",v:"80K",s:"Show in detail how fissure sealing is done.",task:"Demonstrate the fissure sealing process in detail, so patients understand what happens to the tooth and why it matters.",sol:"AI visualization of every stage of the procedure in close-up, in a dynamic vertical video.",fmt:"Reels · AI visualization"},
+ {n:"Lumina · Dental implants",tag:"Dental clinic",v:"",s:"Show patients the process and result of an implant clearly.",task:"Explain to patients how an implant procedure goes and what the result looks like, clearly and without heavy medical footage.",sol:"AI visualization of the procedure stages and a showcase of the finished result in a dynamic vertical video.",fmt:"Reels · AI visualization"},
+ {n:"The Window",tag:"Hyperrealism · Story",v:"",s:"A cinematic story where hyperrealism serves the plot.",task:"Show what AI video production can do in narrative film: keep photorealism, natural acting and a coherent story without a film crew.",sol:"A story about a girl and a mysterious remote that changes the reality outside her window. Realistic light, skin and facial expressions, a consistent look for the heroine from shot to shot, and a smooth shift from an everyday scene to surreal landscapes.",fmt:"Cinematic video · 16:9"},
+ {n:"Friends in Old Age",tag:"3D animation",v:"",s:"A personal animated gift: two friends as they will be in the future.",task:"A client asked for a video of herself and her friend in old age: warm, stylish and funny enough that they would want to share it.",sol:"A custom 3D animation in the style of a feature-length cartoon. The heroines are recognizable by character and look, and the story moves from a video call to a trip along the French Riviera: yachts, shopping, spa and an evening out. Considered storytelling and a cinematic finish.",fmt:"Reels · personal animated video"},
+ {n:"Shop Window",tag:"Retro noir",v:"",s:"A stylized cinematic story in 80s aesthetics with cohesive visual direction.",task:"Show that AI video can do more than explain and sell: it can tell a full cinematic story with a consistent style, lighting and acting.",sol:"A dynamic retro-noir plot: a dusk city at night, a shattered shop window, a bold ride in a convertible and a Polaroid snapshot. One cinematic color grade with neon and a sunset sky, a recognizable heroine throughout, a building editing tempo and subtitles.",fmt:"Cinematic video · 16:9"}]},
+uk:{role:"AI-креатор · відео та візуал для бізнесу",h1:["Відео, яке залучає","<b>клієнтів</b>, без знімальної","групи та студії"],
+ sub:"Мене звати <b>Кіріл</b>. Створюю AI-відео та візуал під вашу задачу: залучити охоплення, пояснити послугу або показати те, що складно зняти. Ви отримуєте готовий матеріал, а не набір гарних картинок.",
+ c1:"Готово під вашу площадку",c2:"Показую те, що дорого зняти",c3:"Впізнаваний стиль бренду",cta:"Обговорити проєкт",ghW:"Cases",ghS:"Value",
+ worksT:"Кейси",servT:"Що ви <b>отримуєте</b>",toolsT:"Інструменти",revT:"Відгуки",rev:"Тут з'являться відгуки клієнтів.",contT:"Обговоримо вашу <b>задачу</b>",contP:"Опишіть, що потрібно показати і де житиме відео. Запропоную формат і терміни.",
+ hi:"Привіт!",nav1:"Кейси",nav2:"Послуги",nav3:"Контакти",write:"Написати",quick:"Швидкий старт: оберіть тему, і повідомлення в Telegram уже буде написане.",tgmsg:"Вітаю, Кіріл! Хочу обговорити відео. Моя задача: ",tgq:"Вітаю, Кіріл! Хочу обговорити: ",views:"переглядів",lviews:"Результат",snd:"Увімкнути звук",close:"Закрити",watch:"Відео скоро буде тут",lt:"Ніша",ltask:"Задача",lsol:"Рішення",lfmt:"Формат",
+ serv:[["Відео для просування","Рекламні та іміджеві ролики, які збирають охоплення й запам'ятовуються."],["Пояснення послуги","Наочне відео: клієнт розуміє цінність ще до першого дзвінка."],["Візуалізація","Процеси, продукти та результати, які складно або дорого зняти."],["Контент для бренду","Єдиний візуальний стиль: відео, зображення, обкладинки."]],
+ w:[{n:"Sublimini store",tag:"Сублімовані фрукти",v:"500K+",s:"Виділити бренд і набрати охоплення через сюжет про два покоління.",task:"Розповісти про продукт так, щоб ролик набирав охоплення, а бренд запам'ятовувався.",sol:"Сюжет-порівняння двох підходів: бабусиного та сучасної мами. Перевага продукту розкривається через історію, а не пряму рекламу.",fmt:"Reels · сюжетний ролик"},
+ {n:"Lumina · Герметизація фісур",tag:"Стоматологія",v:"80K",s:"Детально показати, як проходить герметизація фісур.",task:"Детально й наочно продемонструвати процес герметизації фісур, щоб пацієнти розуміли, що відбувається із зубом і навіщо це потрібно.",sol:"AI-візуалізація кожного етапу процедури великим планом у динамічному вертикальному відео.",fmt:"Reels · AI-візуалізація"},
+ {n:"Lumina · Імплантація",tag:"Стоматологія",v:"",s:"Наочно показати пацієнтам хід і результат імплантації.",task:"Пояснити пацієнтам, як проходить імплантація та яким стає результат, зрозуміло й без важких медичних кадрів.",sol:"AI-візуалізація етапів процедури та демонстрація готового результату в динамічному вертикальному відео.",fmt:"Reels · AI-візуалізація"},
+ {n:"Вікно",tag:"Гіперреалізм · Сюжет",v:"",s:"Кінематографічна історія, де гіперреалізм працює на сюжет.",task:"Показати, на що здатний AI-відеопродакшн у ігровому кіно: втримати фотореалізм, живу акторську гру та цілісну історію без знімальної групи.",sol:"Сюжет про дівчину й таємничий пульт, який змінює реальність за вікном. Реалістичне світло, шкіра та міміка, незмінний образ героїні від кадру до кадру й плавний перехід від побутової сцени до сюрреалістичних пейзажів.",fmt:"Кінематографічний ролик · 16:9"},
+ {n:"Подруги в старості",tag:"3D-мультфільм",v:"",s:"Персональний анімаційний подарунок: дві подруги в образі з майбутнього.",task:"Клієнтка звернулася із запитом створити відео про себе та подругу в старості: тепле, стильне, з гумором, яким хочеться поділитися.",sol:"Індивідуальна 3D-анімація у стилі повнометражного мультфільму. Героїні впізнавані за характером і образом, а сюжет веде від відеодзвінка до подорожі Лазурним узбережжям: яхти, шопінг, спа та вечірній вихід. Продумана драматургія й кінематографічна подача.",fmt:"Reels · персональний анімаційний ролик"},
+ {n:"Вітрина",tag:"Ретро-нуар",v:"",s:"Стилізована кіноісторія в естетиці 80-х із цілісною візуальною режисурою.",task:"Показати, що AI-відео може не лише пояснювати й продавати, а й розповідати повноцінну кіноісторію з витриманим стилем, світлом і акторською подачею.",sol:"Динамічний сюжет у дусі ретро-нуару: нічне місто в присмерку, розбита вітрина, зухвала поїздка на кабріолеті та кадр на Polaroid. Єдиний кіношний колоркор із неоном і небом на заході сонця, впізнавана героїня протягом усього ролика, наростаючий темп монтажу й субтитри.",fmt:"Кінематографічний ролик · 16:9"}]}
+};
+/* Видео: вставьте mp4-файл (video) или embed-ссылку YouTube/Vimeo (embed) */
+const V=[{p:"media/poster1.jpg",video:"media/video1.mp4",ar:"p"},
+{p:"media/poster2.jpg",video:"media/video2.mp4",ar:"p"},
+{p:"media/poster3.jpg",video:"media/video3.mp4",ar:"p"},
+{p:"media/poster4.jpg",video:"media/video4.mp4",ar:"l"},
+{p:"media/poster5.jpg",video:"media/video5.mp4",ar:"p"},
+{p:"media/poster6.jpg",video:"media/video6.mp4",ar:"l"}];
+let L="ru";try{L=localStorage.getItem("lang")||(navigator.language||"ru").slice(0,2)}catch(e){}if(!T[L])L="ru";
+const $=id=>document.getElementById(id),dlg=$("dlg"),screen=$("screen");let cur=null;
+const txt=(el,s)=>{el.innerHTML=s};
+function render(){
+  const t=T[L];document.documentElement.lang=L;
+  document.querySelectorAll("[data-i]").forEach(e=>{if(typeof t[e.dataset.i]==="string")txt(e,t[e.dataset.i])});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===L));
+  $("h1").innerHTML=t.h1.map((s,i)=>'<span class="ln"><span style="animation-delay:'+(.15+i*.14)+'s">'+s+'</span></span>').join("");
+  const TG="https://t.me/bumazhnyk?text=";
+  document.querySelectorAll("a.tg").forEach(a=>a.href=TG+encodeURIComponent(t.tgmsg));
+  $("qk").innerHTML="";t.serv.slice(0,3).forEach(s=>{const a=document.createElement("a");a.href=TG+encodeURIComponent(t.tgq+s[0]+". ");a.target="_blank";a.rel="noopener";a.textContent=s[0];$("qk").appendChild(a)});
+  $("grid").innerHTML="";
+  V.forEach((v,i)=>{const w=t.w[i],b=document.createElement("button");b.className="card glass";
+    b.innerHTML='<div class="poster"><span class="tag"></span><span class="play"></span><span class="stat"></span></div><div class="row"><div><h3></h3><p></p></div><span class="go">→</span></div>';
+    b.querySelector(".poster").style.backgroundImage="url("+v.p+")";const st=b.querySelector(".stat");if(w.v)st.textContent=w.v+" "+t.views;else st.remove();b.querySelector(".tag").textContent=w.tag;b.querySelector("h3").textContent=w.n;b.querySelector("p").textContent=w.s;b.onclick=()=>{cur=i;dlg.showModal();fill()};rv(b,i,1);$("grid").appendChild(b)});
+  $("serv").innerHTML="";
+  t.serv.forEach((s,j)=>{const d=document.createElement("div");d.className="box glass";d.innerHTML="<h3></h3><p></p>";d.querySelector("h3").textContent=s[0];d.querySelector("p").textContent=s[1];rv(d,j);$("serv").appendChild(d)});
+  if(cur!==null&&dlg.open)fill();
+}
+function fill(){
+  const w=T[L].w[cur],v=V[cur];
+  $("mt").textContent=w.n;$("mtag").textContent=w.tag;$("mtask").textContent=w.task;$("msol").textContent=w.sol;$("mfmt").textContent=w.fmt;$("mvw").style.display=w.v?"":"none";$("mviews").textContent=w.v?w.v+" "+T[L].views:"";
+  screen.innerHTML="";screen.className="screen";dlg.querySelector(".modal").classList.toggle("land",v.ar==="l");
+  if(v.video){const e=document.createElement("video");e.src=v.video;e.poster=v.p;e.controls=true;e.playsInline=true;e.preload="auto";e.defaultMuted=false;e.muted=false;e.volume=1;e.setAttribute("playsinline","");e.setAttribute("webkit-playsinline","");e.addEventListener("click",()=>{if(e.muted)e.muted=false});screen.appendChild(e);
+    let used=false;const useFb=()=>{if(used||!v.fb)return;used=true;e.src=v.fb;e.load();e.play().catch(()=>{})};
+    e.addEventListener("error",useFb);setTimeout(()=>{if(e.readyState<2)useFb()},5000);
+    const sb=document.createElement("button");sb.className="snd";sb.textContent="🔇 "+T[L].snd;sb.hidden=true;sb.onclick=()=>{e.muted=false;e.volume=1;e.play();sb.hidden=true};screen.appendChild(sb);
+    e.addEventListener("volumechange",()=>{sb.hidden=!e.muted});
+    const pr=e.play();if(pr&&pr.catch)pr.catch(err=>{if(err&&err.name==="NotAllowedError"){e.muted=true;e.play().then(()=>{sb.hidden=false}).catch(()=>{})}})}
+  else if(v.embed){const e=document.createElement("iframe");e.src=v.embed;e.allow="autoplay; fullscreen";e.allowFullscreen=true;screen.appendChild(e)}
+  else screen.textContent=T[L].watch;
+}
+$("close").onclick=()=>dlg.close();dlg.addEventListener("close",()=>{screen.innerHTML="";cur=null});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem("lang",L)}catch(e){}render()});
+let rvReady=false;
+const io="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12}):null;
+function rv(el,i,L){el.classList.add("rv");el.style.setProperty("--dx",(L||!(i%2)?"-":"")+(L?"150":"110")+"px");el.style.setProperty("--d",(L?i*.2:(i%3)*.08)+"s");if(rvReady||!io)el.classList.add("in");else io.observe(el)}
+function staticRv(){[".two .box",".tools span",".rfeat",".rcard",".contact"].forEach(s=>document.querySelectorAll(s).forEach((el,i)=>rv(el,i)))}
+const root=document.documentElement,mt=document.querySelector('meta[name="theme-color"]');
+function setTheme(t,save){root.dataset.theme=t;if(mt)mt.content=t==="light"?"#e8f2fe":"#070707";if(save){try{localStorage.setItem("theme",t)}catch(e){}}}
+setTheme(root.dataset.theme==="light"?"light":"dark",false);
+$("theme").onclick=()=>setTheme(root.dataset.theme==="light"?"dark":"light",true);
+staticRv();render();rvReady=true;
+/* анимации: таймкод, свет за курсором, параллакс больших слов */
+const calm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(!calm){
+  
+  addEventListener("pointermove",e=>{const s=document.documentElement.style;s.setProperty("--mx",e.clientX+"px");s.setProperty("--my",e.clientY+"px")},{passive:true});
+  const gs=[...document.querySelectorAll(".ghost")];let tick=false;
+  const par=()=>{gs.forEach(g=>{const r=g.parentElement.getBoundingClientRect();g.style.transform="translateX("+(-r.top*parseFloat(g.dataset.sp)*.6)+"px)"});tick=false};
+  addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(par)}},{passive:true});par();
+}
+</script>
+</body>
+</html>
